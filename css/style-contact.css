@@ -1,1 +1,39 @@
 @import url('css/style_general.css');
+
+
+/*CONTACT INFORMATION DESIGN*/
+
+
+.store-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.store-info-container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.store-info-container-cell{
+    padding-top: 50px;
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+}
+
+
+/*CONTACT FORM DESIGN*/
+
+
+#contact-form-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}

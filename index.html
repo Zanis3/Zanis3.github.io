@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style-general.css">
     <link rel="stylesheet" href="css/style-index.css">
     <link rel="icon" type="image/png" href="img/img-general/website-logo.png">
-    <title>A+ CafetéTearia</title>
+    <title>A+ CafeTéaria</title>
 </head>
 <body>
     <main>
@@ -25,10 +25,26 @@
                     <a href="#"><img src="img/img-general/heart-logo.png"></a>
                     <a href="#"><button>Buy A Drink</button></a>
                 </nav>
-                <button id="hamburger-menu">
-                    <div id="hamburger-bar"><img src="img/img-general/hamburger-icon.png"></div>
+                <button class="hamburger-menu">
+                    <div class="hamburger-bar"></div>
                 </button>
             </header>
+
+            <!--MOBILE NAVIGATION-->
+            <nav class="mobile-nav">
+                <a href="index.html" class ="nav-active">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <div class="mobile-image-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100093424466600"><img src="img/img-general/facebook-logo.png"></a>
+                    <a href="#"><img src="img/img-general/instagram-logo.png"></a>
+                    <a href="#"><img src="img/img-general/cart-logo.png"></a>
+                    <a href="#"><img src="img/img-general/heart-logo.png"></a>
+                </div>
+                <a href="#"><button>Buy A Drink</button></a>
+            </nav>
+            
             <!--HERO BANNER-->
             <div class = "hero-container">
                 <div class = "website-logo">
@@ -49,7 +65,7 @@
                 <div class="green-tea-image">
                     <img src="img/img-homepage/green-tea.png">
                 </div>
-                <div class="main-product-cell">
+                <div class="main-product-cell white">
                     <div class = "product-text">
                         <h1 class ="main-product-title">Milk Tea</h1>
                         <p class="main-product-subtitle">A symphony of flavors in every sip. Immerse yourself in the perfect blend of premium tea leaves and creamy milk, creating a harmonious and indulgent experience.</p>
@@ -67,7 +83,7 @@
                         <p class="main-product-subtitle">Crafted with precision and inspired by the vibrant streets of Thailand, our tea is a symphony of robust, handpicked leaves and a blend of aromatic spices.</p>
                     </div>
                 </div>
-                <div class="main-product-cell">
+                <div class="main-product-cell white">
                     <div class = "product-text">
                         <h1 class ="main-product-title">Iced Coffee</h1>
                         <p class="main-product-subtitle">A refreshing symphony of bold flavor and cool indulgence. Dive into the perfect blend of rich coffee, meticulously brewed and chilled to perfection.</p>
@@ -125,7 +141,7 @@
             <div class="main-teaser-content">
                 <p class="content-description">Great ideas start with great coffee and tea,  Lets help you achieve that</p>
                 <h1 class="content-title" id = "aus-teaser-title">Get Started Today</h1>
-                <button id="about-us-button">Know More About Us</button>
+                <a href="about.html"><button id="about-us-button">Know More About Us</button></a>
             </div>
         </section>
     </main>
