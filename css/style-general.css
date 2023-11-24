@@ -188,6 +188,7 @@ li{
 
 .content-description{
     color:var(--color-light-grey);
+    text-align: center;
 }
 
 .content-header hr{

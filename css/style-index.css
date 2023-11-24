@@ -107,53 +107,61 @@
 /*MEDIA QUERIES*/
 
 
-@media(max-width:1399px) {
-
-    /*OUR PRODUCTS DESIGN*/
+@media(max-width:1536px){
     .main-product-overview-content{
-        width:1000px;
-    }
-
-    /*PERSUATION DESIGN*/
-    .persuation-main-content{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        gap:50px;
+        max-width:1280px;
     }
 }
 
-@media(max-width:999px){
-
-    /*OUR PRODUCTS DESIGN*/
+@media(max-width:1280px){
     .main-product-overview-content{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap:25px;
-        width:750px;
-        padding-left:32px;
-        padding-right:32px;
+        max-width:1024px;
     }
+}
 
-    /*PERSUATION DESIGN*/
-    .persuation-main-content{
+@media(max-width:1024px){
+    .main-product-overview-content{
+        max-width:768px;
         display:flex;
         flex-direction: column;
-        gap:50px;
     }
 }
 
-@media(max-width:749px){
-
-    /*OUR PRODUCTS DESIGN*/
+@media(max-width: 768px){
     .main-product-overview-content{
-        width:546px;
+        max-width:640px;
+    }
+}
+
+@media(max-width: 640px){
+    .main-product-overview-content{
+        max-width:475px;
+    }
+}
+
+@media(max-width:475px){
+    .main-product-overview-content{
+        max-width:100%;
+        gap:30px;
+        justify-content: center;
+        align-items: center;
     }
 
-    /*PERSUATION DESIGN*/
-    #persuation-title{
-        font-size: 44px;
+    .main-product-over-content h1{
+        font-size: 20px;
+    }
+
+    .main-product-over-content p{
+        font-size: 18px;
+    }
+
+    .main-product-cell.leaf{
+        background:var(--color-leaf);
+        padding-top:20px;
+        padding-bottom:20px;
+    }
+
+    .green-tea-image{
+        display:none;
     }
 }
