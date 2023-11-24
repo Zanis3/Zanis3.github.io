@@ -85,11 +85,11 @@
                 <p class="content-description">Your feedback will help us improve our services!</p>
                 <hr>
             </div>
-            <form action="email_sender.php" id="contact-form-content">
-                <input type="text" id="user-name" placeholder="Your Name" id="form-box-left">
-                <input type="text" id="user-email" placeholder="E-Mail Address">
-                <input type="text" id="user-phone" placeholder="Phone Number" id="form-box-left">
-                <input type="text" id="user-subject" placeholder="Subject">
+            <form action="https://formspree.io/f/xoqoovqv" method="POST" id="contact-form-content">
+                <input type="text" name="name" placeholder="Your Name" id="form-box-left">
+                <input type="text" name="email" placeholder="E-Mail Address">
+                <input type="text" name="phone" placeholder="Phone Number" id="form-box-left">
+                <input type="text" name="subject" placeholder="Subject">
                 <textarea id="user-message" name="message" rows="4" cols="50" placeholder="Your Message"></textarea>
                 <input type="submit" value="Send">
             </form>
