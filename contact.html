@@ -85,12 +85,12 @@
                 <p class="content-description">Your feedback will help us improve our services!</p>
                 <hr>
             </div>
-            <form id="contact-form-content">
-                <input type="text" placeholder="Your Name" id="form-box-left">
-                <input type="text" placeholder="E-Mail Address">
-                <input type="text" placeholder="Phone Number" id="form-box-left">
-                <input type="text" placeholder="Subject">
-                <textarea id="message" name="message" rows="4" cols="50" placeholder="Your Message"></textarea>
+            <form action="email_sender.php" id="contact-form-content">
+                <input type="text" id="user-name" placeholder="Your Name" id="form-box-left">
+                <input type="text" id="user-email" placeholder="E-Mail Address">
+                <input type="text" id="user-phone" placeholder="Phone Number" id="form-box-left">
+                <input type="text" id="user-subject" placeholder="Subject">
+                <textarea id="user-message" name="message" rows="4" cols="50" placeholder="Your Message"></textarea>
                 <input type="submit" value="Send">
             </form>
         </section>
