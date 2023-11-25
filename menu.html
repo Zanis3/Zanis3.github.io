@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style-general.css">
-    <link rel="stylesheet" href="css/style-about.css">
+    <link rel="stylesheet" href="css/style-menu.css">
     <link rel="icon" type="image/png" href="img/img-general/website-logo.png">
     <title>A+ CafeTéaria</title>
 </head>
@@ -15,8 +15,8 @@
             <!--NAVIGATION-->
             <header>
                 <nav class = "navigation">
-                    <a href="index.html">Home</a>
-                    <a href="menu.html" class ="nav-active">Menu</a>
+                    <a href="index.html" class ="nav-active">Home</a>
+                    <a href="menu.html">Menu</a>
                     <a href="about.html">About</a>
                     <a href="contact.html">Contact</a>
                     <a href="https://www.facebook.com/profile.php?id=100093424466600"><img src="img/img-general/facebook-logo.png"></a>
@@ -36,10 +36,12 @@
                 <a href="menu.html">Menu</a>
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>
-                <a href="https://www.facebook.com/profile.php?id=100093424466600"><img src="img/img-general/facebook-logo.png"></a>
-                <a href="#"><img src="img/img-general/instagram-logo.png"></a>
-                <a href="#"><img src="img/img-general/cart-logo.png"></a>
-                <a href="#"><img src="img/img-general/heart-logo.png"></a>
+                <div class="mobile-image-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100093424466600"><img src="img/img-general/facebook-logo.png"></a>
+                    <a href="#"><img src="img/img-general/instagram-logo.png"></a>
+                    <a href="#"><img src="img/img-general/cart-logo.png"></a>
+                    <a href="#"><img src="img/img-general/heart-logo.png"></a>
+                </div>
                 <a href="#"><button>Buy A Drink</button></a>
             </nav>
             
@@ -49,6 +51,197 @@
                     <img src="img/img-general/website-logo.png">
                 </div>
                 <h1 id="banner-text">Drinks that capture your heart</h1>
+            </div>
+        </section>
+
+        <!--MENU CONTENT-->
+        <section class="menu-container">
+            <div class="content-header">
+                <h1 class="content-title">Our Delightful Drinks</h1>
+                <ul class="drink-category-selector">
+                    <li class="drink-category-selector-item">ICED COFFEE</li>
+                    <li class="drink-category-selector-item">MILK TEA</li>
+                    <li class="drink-category-selector-item">FRUIT TEA</li>
+                    <li class="drink-category-selector-item">THAI SERIES</li>
+                    <li class="drink-category-selector-item">SPECIALS</li>
+                </ul>
+            </div>
+
+            <div class="menu-container container-fluid">
+                <section class="category-container table-responsive">
+                    <table class="table table-borderless table-hover table-fluid mb-0 content-light-brown">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="align-middle">ICED COFFEE</th>
+                                <th scope="col" class="text-center align-middle">SMALL</th>
+                                <th scope="col" class="text-center align-middle">MEDIUM</th>
+                                <th scope="col" class="text-center align-middle">TALL</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="pl-5 col-sm-6">Spanish Latte</td>
+                                <td class="text-center col-sm-2">59</td>
+                                <td class="text-center col-sm-2">69</td>
+                                <td class="text-center col-sm-2">79</td>
+                            </tr>
+                            <tr>
+                                <td class="pl-5 col-sm-6">Colombian Mocha</td>
+                                <td class="text-center col-sm-2">59</td>
+                                <td class="text-center col-sm-2">69</td>
+                                <td class="text-center col-sm-2">79</td>
+                            </tr>
+                            <tr>
+                                <td class="pl-5 col-sm-6">Caramel Macchiato</td>
+                                <td class="text-center col-sm-2">59</td>
+                                <td class="text-center col-sm-2">69</td>
+                                <td class="text-center col-sm-2">79</td>
+                            </tr>
+                            <tr>
+                                <td class="pl-5 col-sm-6">Black Americano</td>
+                                <td class="text-center col-sm-2">59</td>
+                                <td class="text-center col-sm-2">69</td>
+                                <td class="text-center col-sm-2">79</td>
+                            </tr>
+                            <tr>
+                                <td class="pl-5 col-sm-6">Hazelnut Choco</td>
+                                <td class="text-center col-sm-2">59</td>
+                                <td class="text-center col-sm-2">69</td>
+                                <td class="text-center col-sm-2">79</td>
+                            </tr>
+                            <tr>
+                                <td class="pl-5 col-sm-6">Matcha Latte</td>
+                                <td class="text-center col-sm-2">59</td>
+                                <td class="text-center col-sm-2">69</td>
+                                <td class="text-center col-sm-2">79</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section class="category-container table-responsive">
+                    <table class="table table-borderless table-hover table-fluid mb-0 content-wheat">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="align-middle">MILK TEA</th>
+                                <th scope="col" class="text-center align-middle">MEDIUM</th>
+                                <th scope="col" class="text-center align-middle">TALL</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class = "menu-subtitle">CLASSIC</td>
+                            </tr>
+                            <tr>
+                                <td class="pl-5 col-sm-6">Wintermelon Milktea</td>
+                                <td class="text-center col-sm-3">59</td>
+                                <td class="text-center col-sm-3">69</td>
+                            </tr>
+                            <tr>
+                                <td class="pl-5 col-sm-6">Matcha Milktea</td>
+                                <td class="text-center col-sm-3">59</td>
+                                <td class="text-center col-sm-3">69</td>
+                            </tr>
+                            <tr>
+                                <td class="pl-5 col-sm-6">Hazelnut Milktea</td>
+                                <td class="text-center col-sm-3">59</td>
+                                <td class="text-center col-sm-3">69</td>
+                            </tr>
+                            <tr>
+                                <td class = "menu-subtitle">CREAMCHEESE</td>
+                            </tr>
+                            <tr>
+                                <td class="pl-5 col-sm-6">Hazelnut Choco</td>
+                                <td class="text-center col-sm-3"></td>
+                                <td class="text-center col-sm-3">69</td>
+                            </tr>
+                            <tr>
+                                <td class="pl-5 col-sm-6">Matcha Latte</td>
+                                <td class="text-center col-sm-3"></td>
+                                <td class="text-center col-sm-3">69</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section class="category-container table-responsive">
+                    <table class="table table-borderless table-hover table-fluid mb-0 content-light-brown">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="align-middle">FRUIT TEA</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="pl-5 col-sm-6">Cloud Berry Fruit Tea</td>
+                                <td class="text-center">59</td>
+                            </tr>
+                            <tr>
+                                <td class="pl-5 col-sm-6">Kiwi Fruit Tea</td>
+                                <td class="text-center">59</td>
+                            </tr>
+                            <tr>
+                                <td class="pl-5 col-sm-6">Green Apple Fruit Tea</td>
+                                <td class="text-center">59</td>
+                            </tr>
+                            <tr>
+                                <td class="pl-5 col-sm-6">Peach Mango Fruit Tea</td>
+                                <td class="text-center">59</td>
+                            </tr>
+                            <tr>
+                                <td class="pl-5 col-sm-6">Mixed Berries Fruit Tea</td>
+                                <td class="text-center">59</td>
+                            </tr>
+                            <tr>
+                                <td class="pl-5 col-sm-6">Grapefruit Tea</td>
+                                <td class="text-center">59</td>
+                            </tr>
+                            <tr>
+                                <td class="pl-5 col-sm-6">Passion Fruit Tea</td>
+                                <td class="text-center">59</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section class="category-container table-responsive">
+                    <table class="table table-borderless table-hover table-fluid mb-0 content-wheat">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="align-middle">THAI SERIES</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="pl-5 col-sm-6">Thai Red Tea</td>
+                                <td class="text-center">89</td>
+                            </tr>
+                            <tr>
+                                <td class="pl-5 col-sm-6">Thai Green Milk</td>
+                                <td class="text-center">89</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section class="category-container table-responsive">
+                    <table class="table table-borderless table-hover table-fluid mb-0 content-light-brown">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="align-middle">SPECIALS</th>
+                                <th scope="col" class="text-center" class="text-center align-middle">GRANDE</th>
+                                <th scope="col" class="text-center" class="text-center align-middle">VENTI</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="pl-5 col-sm-6">Ube Horchata</td>
+                                <td class="text-center col-sm-3">89</td>
+                                <td class="text-center col-sm-3">99</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
             </div>
         </section>
     </main>
@@ -68,7 +261,7 @@
                     </div>
                     <div class="footer-nav-one-right">
                         <a href="" class="footer-nav-links">Menu</a>
-                        <a href="" class="footer-nav-links">Google Maps</a>
+                        <a href="https://www.google.com/maps/place/blk+8+lot,+25+Sampaguita+St,+Taguig,+Metro+Manila/@14.5455801,121.0610487,21z/data=!4m6!3m5!1s0x3397c8923c01fabf:0x66b533c36c822b7e!8m2!3d14.5456116!4d121.0611026!16s%2Fg%2F11rg66_l_p?entry=ttu" class="footer-nav-links">Google Maps</a>
                     </div>
                 </div>
                 
@@ -95,9 +288,9 @@
         </section>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
 
     <script src="js/hamburger.js"></script>
 </body>

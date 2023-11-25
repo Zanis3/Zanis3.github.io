@@ -60,6 +60,7 @@
     align-items: center;
     justify-content: space-evenly;
     padding-top:50px;
+    gap:25px;
 }
 
 .persuation-cell{

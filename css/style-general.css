@@ -183,7 +183,13 @@ li{
 
 .mobile-image-icons{
     display: flex;
-    width:125px;
+    width:100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.no-scroll{
+    overflow:hidden;
 }
 
 /*HERO DESIGN*/
@@ -319,10 +325,12 @@ li{
 .footer-nav-links{
     font-weight: 700;
     color:var(--color-grey);
+    transition:0.4s;
 }
 
 .footer-nav-links:hover{
-    color:var(--color-light-grey);
+    color:var(--color-light-brown);
+    text-decoration:none;
 }
 
 #subscribe-title{
@@ -366,6 +374,7 @@ li{
     font-size: 16px;
     font-weight: 800;
     cursor: pointer;
+    transition:0.4s;
 }
 
 #footer-form input[type="button"]:hover{
@@ -404,6 +413,10 @@ li{
         padding-top: 150px;
     }
 
+    .hero-container::before{
+        background: linear-gradient(90deg, rgba(67, 46, 22, 0.67) 29.97%, rgba(82, 58, 31, 0.54) 59.47%, rgba(81, 55, 27, 0.55) 99.91%);
+    }
+
     .website-logo img{
         max-width:80%;
     }
@@ -412,6 +425,37 @@ li{
 @media(max-width:1024px){
     .footer-container{
         flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-nav-container{
+        align-items: center;
+    }
+
+    .footer-nav-one{
+        flex-direction: column;
+        gap:10px;
+    }
+
+    .footer-nav-one-left{
+        align-items: center;
+    }
+
+    .footer-nav-one-right{
+        align-items: center;
+    }
+
+    .footer-nav-social{
+        display: flex;
+        gap:20px;
+    }
+
+    #footer-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:25px;
+        padding-bottom:25px;
     }
 
     .navigation{
@@ -433,8 +477,43 @@ li{
 
 @media(max-width: 640px){
 
+    #subscribe-subtitle{
+        text-align: center;
+    }
+
+    .hero-container{
+        padding-top:80px;
+        height:650px;
+    }
+
+    #footer-form input[type="text"]{
+        width:475px;
+    }
 }
 
 @media(max-width:475px){
+    .footer-nav-container{
+        width: 100%;
+    }
 
+    #subscribe-title{
+        font-size: 32px;
+        text-align: center;
+    }
+
+    #footer-form input[type="text"]{
+        width:100%;
+    }
+
+    .hero-container{
+        padding-top:140px;
+    }
+
+    .website-logo img{
+        width:65%;
+    }
+
+    #banner-text{
+        font-size: 40px;
+    }
 }

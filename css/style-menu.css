@@ -1,1 +1,121 @@
 @import url('css/style_general.css');
+
+
+/*MENU TITLE DESIGN*/
+
+
+.drink-category-selector{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    border-bottom: 3px solid var(--color-leaf);
+}
+
+.drink-category-selector-item{
+    display: inline;
+    color:var(--color-coffee);
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-weight: 700;
+    cursor:pointer;
+    width:195px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+}
+
+.is-selected{
+    background:var(--color-leaf);
+}
+
+
+/*MENU TABLE DESIGN*/
+
+
+.table.content-light-brown{
+    background: rgba(194, 166, 145, 0.40);;
+}
+
+.table.content-wheat{
+    background:rgba(231, 215, 203, 0.44);;
+}
+
+thead{
+    font-family:'Montserrat';
+    font-size: 32px;
+    font-weight: 800;
+}
+
+td{
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.menu-subtitle{
+    font-weight: 800;
+}
+
+.no-hover:hover{
+    background-color: inherit !important;
+}
+
+
+/*MEDIA QUERIES*/
+
+
+@media(max-width:1536px){
+}
+
+@media(max-width:1280px){
+}
+
+@media(max-width:1024px){
+    .drink-category-selector{
+        width:768px;
+    }
+}
+
+@media(max-width: 768px){
+    .drink-category-selector{
+        width:640px;
+    }
+
+    .drink-category-selector-item{
+        font-size: 18px;
+    }
+
+    th{
+        font-size:28px;
+    }
+
+    td{
+        font-size: 18px;
+    }
+
+    .menu-subtitle{
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 640px){
+    .drink-category-selector{
+        display:none;
+    }
+}
+
+@media(max-width:475px){
+    .pl-5{
+        padding-left:1rem !important;
+    }
+
+    th{
+        font-size:20px;
+    }
+
+    td{
+        font-size: 16px;
+    }
+}
