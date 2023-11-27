@@ -18,6 +18,11 @@
     justify-content: center;
 }
 
+.store-info-container img{
+    border: 2px solid var(--color-grey);
+    border-radius: 5px;
+}
+
 .store-info-container-cell{
     padding-top: 50px;
     flex:1;
