@@ -1,7 +1,7 @@
 window.onload = function(){
     const menu_btn = document.querySelector('.hamburger-menu');
     const nav_mobile = document.querySelector('.mobile-nav');
-    const menuItems  = document.querySelector('.drink-category-selector-item'); // <-- SELECTOR IN MENU.HTML!!!
+    const menuItems  = document.querySelectorAll('.drink-category-selector-item'); // <-- SELECTOR IN MENU.HTML!!!
 
     menu_btn.addEventListener('click', function() {
         menu_btn.classList.toggle('is-active');
@@ -12,7 +12,13 @@ window.onload = function(){
 
     menuItems.forEach(function (menuItem) {
         menuItem.addEventListener('click', function () {
-            menuItem.classList.toggle('is-selected');
+            menuItem.forEach(function (item){
+                menuItems.forEach(function (item) {
+                    item.classList.remove('is-selected');
+                });
+
+                menuItem.classList.add('is-selected');
+            })
         });
     });
 }

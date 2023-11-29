@@ -52,7 +52,7 @@
     grid-gap:50px;
 }
 
-#contact-form-content input[type="text"]{
+#contact-form-content input[type="text"], #contact-form-content input[type="email"]{
     width:540px;
     height:60px;
     border: 1px solid var(--color-coffee); 
@@ -100,6 +100,10 @@
     transition: 0.4s;
 }
 
+#contact-form-content input[type="text"]:focus, #contact-form-content input[type="email"]:focus, #contact-form-content textarea:focus{
+    outline:var(--color-coffee);
+}
+
 #contact-form-content input[type="submit"]:hover{
     color:var(--color-white);
     background: var(--color-leaf);
@@ -128,7 +132,7 @@
         max-width:1024px;
     }
 
-    #contact-form-content input[type="text"]{
+    #contact-form-content input[type="text"], #contact-form-content input[type="email"]{
         width:500px;
     }
 
@@ -187,7 +191,7 @@
         gap:20px;
     }
 
-    #contact-form-content input[type="text"]{
+    #contact-form-content input[type="text"], #contact-form-content input[type="email"]{
         max-width:85vw;
     }
 
