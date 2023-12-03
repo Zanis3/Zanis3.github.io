@@ -514,6 +514,11 @@ li{
     .footer-breaker img{
         height:260px;
     }
+
+    .hero-container{
+        padding-top:100px;
+        height:650px;
+    }
 }
 
 @media(max-width: 640px){
@@ -521,12 +526,7 @@ li{
     #subscribe-subtitle{
         text-align: center;
     }
-
-    .hero-container{
-        padding-top:100px;
-        height:650px;
-    }
-
+    
     #footer-form input[type="text"]{
         width:475px;
     }
@@ -541,6 +541,11 @@ li{
 
     .footer-breaker img{
         height:220px;
+    }
+
+    .hero-container{
+        padding-top:60px;
+        height:480px;
     }
 }
 
@@ -568,5 +573,10 @@ li{
 
     #banner-text{
         font-size: 40px;
+    }
+
+    .hero-container{
+        padding-top:45px;
+        height:480px;
     }
 }

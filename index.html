@@ -11,6 +11,17 @@
 </head>
 <body>
     <main>
+        <!--POPUP ADVERTISMENT CONTENT-->
+        <section class="advertisement-popup popup-active">
+            <div class="popup-header">
+                <button data-close-button class="popup-close-button">x</button>
+            </div>
+            <div class="popup-content">
+                <img src="img/img-homepage/popup-image.png" alt="" class="popup-image">
+            </div>
+        </section>
+        <div id="overlay" class="popup-active"></div>
+
         <section class = "header-container">
             <!--NAVIGATION-->
             <header>
@@ -154,14 +165,16 @@
         <section class = "footer-container">
             <div class = "footer-nav-container">
                 <div class="footer-nav-one">
-                    <div class = "footer-nav-one-left">
-                        <a href="" class="footer-nav-links">About Us</a>
-                        <a href="#" class="footer-nav-links">Privacy Policy</a>
-                        <a href="" class="footer-nav-links">Contact Us</a>
-                    </div>
-                    <div class="footer-nav-one-right">
-                        <a href="" class="footer-nav-links">Menu</a>
-                        <a href="https://www.google.com/maps/place/blk+8+lot,+25+Sampaguita+St,+Taguig,+Metro+Manila/@14.5455801,121.0610487,21z/data=!4m6!3m5!1s0x3397c8923c01fabf:0x66b533c36c822b7e!8m2!3d14.5456116!4d121.0611026!16s%2Fg%2F11rg66_l_p?entry=ttu" class="footer-nav-links">Google Maps</a>
+                    <div class="footer-nav-one">
+                        <div class = "footer-nav-one-left">
+                            <a href="about.html" class="footer-nav-links">About Us</a>
+                            <a href="#" class="footer-nav-links">Privacy Policy</a>
+                            <a href="contact.html" class="footer-nav-links">Contact Us</a>
+                        </div>
+                        <div class="footer-nav-one-right">
+                            <a href="menu.html" class="footer-nav-links">Menu</a>
+                            <a href="https://www.google.com/maps/place/blk+8+lot,+25+Sampaguita+St,+Taguig,+Metro+Manila/@14.5455801,121.0610487,21z/data=!4m6!3m5!1s0x3397c8923c01fabf:0x66b533c36c822b7e!8m2!3d14.5456116!4d121.0611026!16s%2Fg%2F11rg66_l_p?entry=ttu" class="footer-nav-links">Google Maps</a>
+                        </div>
                     </div>
                 </div>
                 
@@ -193,5 +206,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <script src="js/hamburger.js"></script>
+    <script src="js/popup.js"></script>
 </body>
 </html>

@@ -1,6 +1,86 @@
 @import url('css/style_general.css');
 
 
+/*POPUP DESIGN*/
+
+
+.advertisement-popup{
+    z-index:90;
+    position:fixed;
+    top:50%;
+    left:50%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translate(-50%, -50%) scale(0);
+    background:var(--color-leaf);
+    border:2px solid var(--color-brown);
+    border-radius:10px;
+    width: 540px;
+    height:95%;
+    gap:25px;
+    transition:200ms ease-in-out;
+}
+
+.advertisement-popup.popup-active{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup-content{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.popup-header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right:20px;
+    padding-top:5px;
+}
+
+.popup-close-button{
+    width:30px;
+    height:30px;
+    background: lightcoral;
+    transition: 0.4s;
+    font-weight: bold;
+}
+
+.popup-close-button:hover{
+    background: lightpink;
+}
+
+.popup-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.advertisement-popup img{
+    width:480px;
+    height:680px;
+}
+
+#overlay{
+    position:fixed;
+    opacity:0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color:rgba(0,0,0,0.5);
+    pointer-events: none;
+    z-index:89;
+}
+
+#overlay.popup-active{
+    pointer-events: all;
+    opacity: 1;
+}
+
+
 /*OUR PRODUCTS DESIGN*/
 
 
@@ -181,6 +261,18 @@
 }
 
 @media(max-width: 640px){
+
+    /*POPUP DESIGN*/
+    .advertisement-popup{
+        width:80%;
+        height:auto;
+    }
+
+    .advertisement-popup img{
+        width: 90%;
+        height:auto;
+        padding-bottom: 10px;
+    }
 
     /*OUR PRODUCTS DESIGN*/
     .main-product-overview-content{
