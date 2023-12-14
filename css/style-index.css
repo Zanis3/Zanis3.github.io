@@ -17,7 +17,7 @@
     border:2px solid var(--color-brown);
     border-radius:10px;
     width: 540px;
-    height:95%;
+    height:auto;
     gap:25px;
     transition:200ms ease-in-out;
 }
@@ -46,6 +46,7 @@
     background: lightcoral;
     transition: 0.4s;
     font-weight: bold;
+    border-radius:90px;
 }
 
 .popup-close-button:hover{
@@ -61,6 +62,7 @@
 .advertisement-popup img{
     width:480px;
     height:680px;
+    padding-bottom: 20px;
 }
 
 #overlay{
