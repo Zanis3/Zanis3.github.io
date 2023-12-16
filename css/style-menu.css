@@ -13,7 +13,7 @@
 }
 
 .drink-category-selector-item{
-    display: inline;
+    display: inline-block;
     color:var(--color-coffee);
     font-family: 'Poppins';
     font-size: 20px;
@@ -24,9 +24,18 @@
     text-align: center;
     vertical-align: middle;
     line-height: 50px;
+    pointer-events:all;
+    transition:0.4s;
 }
 
-.is-selected{
+.drink-category-selector-item a{
+    text-decoration: none;
+    color:var(--color-coffee);
+    font-weight:700;
+    font-family: 'Poppins';
+}
+
+.drink-category-selector-item:hover{
     background:var(--color-leaf);
 }
 
@@ -46,6 +55,7 @@ thead{
     font-family:'Montserrat';
     font-size: 32px;
     font-weight: 800;
+    color:var(--color-leaf);
 }
 
 td{
