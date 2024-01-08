@@ -1,3 +1,5 @@
+//Advertisement Popup
+
 const closePopup = document.querySelectorAll('[data-close-button]');
 const overlayPopup = document.getElementById('overlay');
 
@@ -13,3 +15,5 @@ function closeModal(closePopupButton){
     closePopupButton.classList.remove('popup-active');
     overlayPopup.classList.remove('popup-active');
 }
+
+//"Buy a drink" Popup

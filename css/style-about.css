@@ -173,6 +173,7 @@
 
 .slide-content{
     width:470px;
+    min-height:490px;
     height:490px;
     background:white;
     display:flex;
