@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Tab</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Consolas', monospace;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        html, body{
+            width: 100%;
+            height: 100%;
+
+            .container{
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                width: 100%;
+                height: 100%;
+                background-image:url('./background.jpg');
+                background-size:cover;
+                background-repeat:no-repeat;
+                background-position:center;
+                gap: 20px;
+            }
+        }
+
+        class{
+            display:flex;
+            align-items:center;
+            justify-content: center;
+        }
+
+        .notepad{
+            width: 40%;
+            height: 90%;
+            
+            background: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-top: 10px solid beige;
+            border-radius: 0px 0px 20px 20px;
+
+            textarea{
+                width:100%;
+                height:100%;
+                resize:none;
+                padding:20px;
+                background: none;
+                border:none;
+                overflow:auto;
+                outline:none;
+            }
+        }
+
+        .right{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 10%;
+            width: 40%;
+            height: 90%;
+
+            .clock{
+                width: 100%;
+                height: 15%;
+                
+                background: rgba(0, 0, 0, 0.4);
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+                padding: 10px;
+                border-radius: 20px;
+                text-align: center;
+
+                h1{
+                    font-size: 72px;
+                }
+            }
+
+            .shortcuts{
+                width: 100%;
+                height: 75%;
+
+                background: rgba(0, 0, 0, 0.4);
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+                padding: 10px;
+                border-radius: 20px;
+            }
+        }
+
+        .row{
+            display: flex;
+            align-items:center;
+            justify-content:center;
+            flex-direction: column;
+            gap: 20px;
+            width:100%;
+            height: auto;
+            padding: 30px;
+
+            a{
+            text-decoration: none;
+            font-size: 24px;
+            }
+        }
+
+        a:hover{
+             color: #79b0d4;
+             transition: color 0.3s ease;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <!--NOTEPAD-->
+        <div class="notepad">
+            <textarea id="notepad" placeholder="Write your notes here..."></textarea>
+        </div>
+
+        <!--RIGHT SIDE-->
+        <div class="right">
+
+            <!--CLOCK-->
+            <div class="clock">
+                <h1 id="clock">2:08 PM</h1>
+            </div>
+
+            <!--SHORTCUTS-->
+            <div class="shortcuts">
+                <h2 style="width: 100%; text-align:center; font-size: 32px;">Shortcuts</h2>
+                
+                <div class="row">
+                    <a href="https://reddit.com" target="_blank" rel="noopener noreferrer">reddit</a>
+                    <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">youtube</a>
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">facebook</a>
+                    <a href="https://discord.com" target="_blank" rel="noopener noreferrer">discord</a>
+                </div>
+
+                <div class="row">
+                    <a href="https://gmail.com" target="_blank" rel="noopener noreferrer">gmail</a>
+                    <a href="https://steam.com" target="_blank" rel="noopener noreferrer">steam</a>
+                    <a href="https://anilist.com" target="_blank" rel="noopener noreferrer">anilist</a>
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer">github</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+<script>
+    // UPDATE CLOCK FUNCTION
+    function updateClock() {
+        const now = new Date();
+        const options = { hour: '2-digit', minute: '2-digit', hour12: true };
+        const timeString = now.toLocaleTimeString([], options);
+        document.getElementById('clock').textContent = timeString;
+    }
+
+    // UPDATE CLOCK EVERY SECOND
+    updateClock();
+    setInterval(updateClock, 1000);
+
+    //NOTEPAD FUNCTIONALITY
+    const notepad = document.getElementById('notepad');
+    notepad.addEventListener('input', () => {
+        localStorage.setItem('notepadContent', notepad.value);
+    });
+
+</script>
+
+</html>
